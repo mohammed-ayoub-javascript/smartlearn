@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import {   Cairo } from "next/font/google";
+import {   Cairo , Almarai} from "next/font/google";
 import "./globals.css";
-const ar = Cairo({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const ar = Almarai({
+  variable: "--arabic",
+  weight:"400",
+  subsets: ["arabic"],
 });
 
 

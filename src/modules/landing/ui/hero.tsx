@@ -1,7 +1,13 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
+import AuthButton from './auth/auth-button'
+import { getServerSession } from 'next-auth';
+import { options } from '@/lib/auth-options';
+import Link from 'next/link';
 
-const Hero = () => {
+const Hero = async () => {
+    const session = await getServerSession(options);
+
   return (
 <div className='h-screen flex justify-center items-center flex-col w-full border-b border-gray-800 bg-black'>
     <h1 className='text-xl md:text-4xl lg:text-5xl font-extrabold text-white text-center px-4'>
@@ -16,11 +22,17 @@ const Hero = () => {
         انشر الدروس، تعلم مع الذكاء الاصطناعي، مجانًا
     </p>
     
-    <Button 
-        variant="outline"
-    >
-        سجّل الآن
-    </Button>
+    {!session?.user?.email && (
+  <AuthButton />
+
+      )}
+      {session?.user?.email && (
+       <Link href={"/app"}>
+        <Button>
+            لوحة التحكم
+        </Button>
+       </Link>
+      )}
 </div>
   )
 }
