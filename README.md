@@ -24,7 +24,7 @@ AI Learning Platform is an open-source educational platform that leverages artif
 ### Installation
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-repo/ai-learning-platform.git
+   git clone https://github.com/smartlearn/ai-learning-platform.git
    cd ai-learning-platform
    ```
 2. **Install dependencies:**
@@ -75,7 +75,7 @@ AI Learning Platform is an open-source educational platform that leverages artif
 ### التثبيت
 1. **استنساخ المستودع:**
    ```sh
-   git clone https://github.com/your-repo/ai-learning-platform.git
+   git clone https://github.com/smartlearn/ai-learning-platform.git
    cd ai-learning-platform
    ```
 2. **تثبيت التبعيات:**
