@@ -10,7 +10,7 @@ interface UserProgress {
   
   const initDB = (): Promise<IDBDatabase> => {
     return new Promise((resolve, reject) => {
-      const request = indexedDB.open("GameDatabase", 1);
+      const request = indexedDB.open("StudentDatabase", 1);
   
       request.onupgradeneeded = (event: IDBVersionChangeEvent) => {
         const database = (event.target as IDBOpenDBRequest).result;
