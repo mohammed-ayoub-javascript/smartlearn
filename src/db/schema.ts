@@ -6,6 +6,7 @@ export const usersTable = mysqlTable('user', {
     email: varchar({ length: 255 }).notNull().unique(),
     image: varchar({ length: 255 }),
     plan: varchar({ length: 255 }).default("free"),
+    xp : int().notNull().default(0),
     createdAt: timestamp("created_at").defaultNow(),
 });
   
