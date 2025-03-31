@@ -23,3 +23,4 @@ export const message = mysqlTable("message" , {
     userId: int().notNull().references(() => usersTable.id, { onDelete: "cascade" }), 
     createdAt: timestamp("created_at").defaultNow(),
 })
+
