@@ -25,7 +25,6 @@ const AppUser = () => {
             </CardHeader>
         </Card>
 
-        {/* Messages Card */}
         <Card className='relative overflow-hidden transition-all duration-300  border-2 border-gray-800 hover:border-green-500 hover:shadow-[0_0_15px_rgba(34,197,94,0.3)]'>
             <CardHeader className='flex flex-row items-center justify-between p-6'>
                 <div className='space-y-2'>
